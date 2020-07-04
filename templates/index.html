@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form method="POST">
+	<input type="text" placeholder="Number of semesters" name="semn">
+	<input type="text" placeholder="semester 1" name="sem1">
+	<input type="text" placeholder="semester 2" name="sem2">
+	<input type="text" placeholder="semester 3" name="sem3">
+	<input type="text" placeholder="semester 4" name="sem4">
+	<input type="text" placeholder="semester 5" name="sem5">
+	<input type="text" placeholder="semester 6" name="sem6">
+	<input type="text" placeholder="semester 7" name="sem7">
+	<input type="text" placeholder="semester 8" name="sem8">
+	<button style="background-color: #ff362e;">Submit</button>
+</form>
+{% if result %}
+	<h1>Your CGPA is {{result}}<h1>
+{% endif %}
+{% endblock content %}
